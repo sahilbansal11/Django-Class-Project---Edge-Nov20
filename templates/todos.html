@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todos</title>
+  <link rel="stylesheet" href="{% static 'todos.css' %}">
+</head>
+<body>
+  <h1> Todos </h1>
+
+  <ul>
+  <!-- tag -->
+  {% for task in tasks %} 
+    <!-- variable -->
+    <li> {{ task }} </li>
+  {% endfor %}
+  </ul>
+
+  <!-- <h2> This is outside the loop </h2> -->
+
+</body>
+</html>
