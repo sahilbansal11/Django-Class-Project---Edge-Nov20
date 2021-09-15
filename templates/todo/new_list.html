@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New List</title>
+</head>
+<body>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <p> Name: <input name="list_name" type="text"> </p>
+    <input type="submit" value="Add List">
+  </form>
+</body>
+</html>
